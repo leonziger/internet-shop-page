@@ -1,0 +1,56 @@
+.scrollup {
+  display: block;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 50;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #ff8900;
+  text-align: center;
+
+  @media(max-width: 767px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media(max-width: 574px){
+    left: 10px;
+    bottom: 10px;
+  }
+
+  &__text{
+    color: #ff8900;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+
+    @media(max-width: 767px){
+      span {
+        display: none;
+      }
+    }
+
+    &:before{
+      margin: 30% auto 0;
+      display: block;
+      content: '';
+      height: 25px;
+      width: 25px;
+      border: 2px solid #ff8900;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      transition: .4s;
+      transform: rotate(-45deg);
+
+      @media(max-width: 767px) {
+        margin: 40% auto 0;
+      }
+    }
+  }
+
+  &:hover{
+    background: #fff;
+  }
+}

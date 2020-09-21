@@ -1,0 +1,41 @@
+@import 'sprite-images';
+
+
+@mixin spriteBase() {
+  content: '';
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: bottom;
+  background-image: url(../images/sprite.png);
+}
+
+@function getImagePropsByImageName($imageName) {
+  $imageProps: map-get($images, $imageName);
+
+  @if ($imageProps) {
+    @return map-get($images, $imageName);
+  }
+
+  @error "Image with name #{$imageName} is not exist!";
+}
+
+@mixin spritePosition($imageName) {
+  $imageProps: getImagePropsByImageName($imageName);
+
+  background-position: map-get($imageProps, x) map-get($imageProps, y);
+}
+
+@mixin spriteSize($imageName) {
+  $imageProps: getImagePropsByImageName($imageName);
+
+  width: map-get($imageProps, width);
+  height: map-get($imageProps, height);
+}
+
+@mixin sprite($imageName) {
+  $imageProps: getImagePropsByImageName($imageName);
+
+  @include spriteBase();
+  @include spritePosition($imageName);
+  @include spriteSize($imageName);
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.299999237060547 23.200000762939453">
+      <clipPath></clipPath>
+      <path d="M25.3,23.2H0V3.9h25.3V23.2z M2,21.2h21.3V5.9H2V21.2z"></path>
+      <path d="M9.4,5.6H1.9V0h7.4V5.6z M3.9,3.6h3.4V2H3.9V3.6z"></path>
+      <path d="M23.4,5.6h-7.4V0h7.4V5.6z M17.9,3.6h3.4V2h-3.4V3.6z"></path>
+      <rect x="1" y="8.2" width="23.3" height="1"></rect>
+      <rect x="4.4" y="14" width="4.3" height="1"></rect>
+      <rect x="16.4" y="14" width="4.3" height="1"></rect>
+      <rect x="6.1" y="12.4" width="1" height="4.3"></rect>
+</svg>

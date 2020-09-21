@@ -1,0 +1,19 @@
+.top-logo{
+  padding-top: 15px;
+  min-height: 50px;
+  margin-bottom: 47px;
+
+
+  @media (max-width: 420px){
+    display: none;
+  }
+
+  &-mobi{
+    display: none;
+
+    @media (max-width: 420px){
+      display: block;
+      padding-top: 7px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.social-media{
+  margin-top: 26px;
+  display: flex;
+
+  @media (max-width: 992px) {
+    justify-content: center
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 49px;
+    margin-right: 10px;
+    border: 1px solid #7b8092;
+    text-decoration: none;
+    color: #fff;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      color: #ffc925;
+      border: 1px solid #ffc925;
+    }
+  }
+}

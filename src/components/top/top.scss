@@ -1,0 +1,160 @@
+.top {
+  display: flex;
+
+  @media(max-width: 992px){
+    padding-top: 75px;
+  }
+
+  &__menu {
+    width: 25%;
+    padding-right: 20px;
+
+    @media (max-width: 1200px){
+      display: none;
+    }
+  }
+  &__main {
+    width: 75%;
+
+    @media (max-width: 1200px){
+      width: 100%;
+    }
+  }
+
+  &__mainContacts{
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  &__mainActions {
+    padding-top: 7px;
+    display: flex;
+
+    @media (max-width: 992px){
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 440px){
+      flex-direction: column-reverse;
+    }
+
+    // это левое меню в корзине
+    .left-menu{
+      display: none;
+
+      @media(max-width: 1200px){
+        display: block;
+      }
+
+      &__header{
+        border: 0;
+        outline: 0;
+        min-width: 160px;
+        cursor: pointer;
+        height: 56px;
+        background: #ffa900;
+
+        &:hover{
+          opacity: .7;
+        }
+
+        @media (max-width: 1200px) {
+          display: flex;
+        }
+
+        @media (max-width: 440px){
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+
+      &__toggle{
+        position: relative;
+        height: inherit;
+        display: block;
+        width: 60px;
+        background: #db7200;
+
+        span{
+          position: absolute;
+          left:23px;
+          right:23px;
+          top: 0; bottom: 0;
+          height: 2px;
+          margin: auto;
+          background: #fff;
+        }
+
+        &:before{
+          content: '';
+          position: absolute;
+          left: 23px;
+          right: 27px;
+          top: 23px;
+          height: 2px;
+          background: #fff;
+          transition: .4s;
+        }
+
+        &:after{
+          content:'';
+          position: absolute;
+          left: 23px;
+          right: 30px;
+          bottom: 23px;
+          height: 2px;
+          background: #fff;
+          transition: .4s;
+        }
+
+        &_active{
+          right:0;
+
+          span{
+            opacity:0;
+          }
+
+          &:before{
+            left: 22px;
+            top: 19px;
+            transform-origin: top left;
+            transform: rotate(45deg);
+            width: 25px;
+          }
+
+          &:after{
+            left: 22px;
+            top: 36px;
+            transform: rotate(-45deg);
+            transform-origin: bottom left;
+            width: 25px;
+          }
+        }
+
+      }
+
+      &__title{
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        padding: 16px 23px;
+      }
+    }
+  }
+
+  &__mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+
+    @media(max-width: 992px){
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}

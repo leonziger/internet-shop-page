@@ -1,0 +1,38 @@
+<script type="text/html" data-modal="enter">
+    <div class="modal" id="modal-enter">
+        <div class="modal__content modal__content_lg modal__content_noGutters_horizontal enter">
+            <div class="modal__content modal__content_noGutters_vertical enter__delimiter">
+                <form class="enter__form" novalidate="novalidate">
+                    <div class="modal__title">Вход в личный кабинет</div>
+                    <label class="enter__label">Ваш email</label><input class="enter__field" type="email" name="email" autocomplete="off" required="" placeholder="Введите e-mail..."><label class="enter__label">Пароль</label><input class="enter__field" type="password" name="password" minlength="4" required="" placeholder="Введите пароль...">
+                    <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="remembe-me">
+                        <label class="checkbox__icon" for="remembe-me">
+                            <i class="fas" data-fa-pseudo-element=":before"></i>
+                        </label>
+                        <label class="checkbox__label" for="remembe-me">Запомнить меня</label>
+                    </div>
+                    <div class="enter__links"><a class="enter__link" href="#">Забыли пароль?</a><a class="enter__link" href="#">Регистрация</a></div>
+                    <button type="submit" class="button enter__submit">Войти в личный кабинет</button>
+                </form>
+            </div>
+            <div class="modal__content modal__content_noGutters_vertical">
+                <div class="modal__title">Войти с помощью</div>
+                <div class="enter__socials">
+                    <button class="button enter__social-btn enter__social-btn_facebook">
+                        <i class="fab fa-facebook-f enter__social-btn-icon"></i>
+                        <span>Facebook</span>
+                    </button>
+                    <button class="button enter__social-btn enter__social-btn_twitter">
+                        <i class="fab fa-twitter enter__social-btn-icon"></i>
+                        <span>Twitter</span>
+                    </button>
+                    <button class="button enter__social-btn enter__social-btn_google">
+                        <i class="fab fa-google enter__social-btn-icon"></i>
+                        <span>Google</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

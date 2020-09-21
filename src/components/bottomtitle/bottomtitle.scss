@@ -1,0 +1,19 @@
+.bottomtitle{
+  display: flex;
+  font-weight: 500;
+  font-size: 20px;
+  color: #cbcbcb;
+  border-bottom: 1px solid #7a7a7a;
+
+  span{
+    position: relative;
+    bottom: -1px;
+    display: inline-block;
+    border-bottom: 1px solid #ff8900;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px){
+    font-size: 18px;
+  }
+}

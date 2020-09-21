@@ -1,0 +1,12 @@
+import './components/form/form';
+import './components/menu-toggle/menu-toggle';
+import './components/top/top';
+import './components/modal/modal';
+import './components/enter/enter';
+import './components/top-contacts/top-contacts';
+import './components/main-header/main-header';
+import './components/search/search';
+import './components/filter/filter';
+import './components/footer/footer';
+import './components/scrollup/scrollup';
+import './components/thanks/thanks';

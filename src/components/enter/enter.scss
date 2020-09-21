@@ -1,0 +1,159 @@
+.enter{
+  //height: 432px;
+  //margin-top: -115px;
+  //margin-left: -65px;
+
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 870px){
+    max-width: 320px;
+    flex-direction: column;
+  }
+
+  &__form{
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .error{//.error from validator.js plugin
+    color: red;
+    font-size: 14px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+
+    @media(max-width: 867px){
+      padding: 0 5px;
+    }
+  }
+
+  &__delimiter{
+    border-right: 1px solid #dbdbdb;
+
+    @media (max-width: 870px){
+      border-right: 0;
+    }
+  }
+
+  &__label{
+    color: #3b3b3b;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__field{
+    margin: 10px 0 14px;
+    font-size: 14px;
+    color: #9c9c9c;
+    padding-left: 13px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    background-color: #ffffff;
+  }
+
+  &__checkbox{
+    display: flex;
+    margin-top: 14px;
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  input#remembe-me{
+    display: none;
+  }
+
+  &__links{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+
+  &__link{
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+
+    @media(max-width:420px){
+    font-size: 12px;
+  }
+
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+
+    &:hover{
+      color: #ff8900;
+    }
+  }
+
+  &__submit{
+    min-width: 210px;
+    background-color: #afb9c6;
+
+    @media (max-width: 870px){
+      margin-bottom: 30px;
+    }
+
+    &:hover{
+      background: #ff8900;
+    }
+  }
+
+  &__socials{
+    width: 100%;
+    padding-top: 24px;
+
+    @media (max-width: 870px){
+      padding-top: 0;
+      display: flex;
+      justify-content: space-between;
+  }
+  }
+
+  &__social-btn{
+    width: 100%;
+    margin-top: 24px;
+
+    @media (max-width: 870px){
+      width: 30%;
+      display: inline-flex;
+      margin-top: 0;
+
+      span{
+        display: none;
+      }
+    }
+
+    &:first-child{
+      margin-top: 0;
+    }
+
+    &-icon{
+      margin-right: 15px;
+
+      @media (max-width: 870px){
+        margin-right: 0;
+        font-size: 20px;
+      }
+    }
+
+    &_facebook {
+      background-color: #3b5998;
+    }
+
+    &_twitter {
+      background-color: #41abe1;
+    }
+
+    &_google {
+      background-color: #ea4335;
+    }
+  }
+
+}
+
+
+

@@ -1,0 +1,12 @@
+@import './sprite-mixins';
+
+.sprite {
+  @include spriteBase();
+
+  @each $imageName, $imageProps in $images {
+    &__#{$imageName} {
+      @include spritePosition($imageName);
+      @include spriteSize($imageName);
+    }
+  }
+}

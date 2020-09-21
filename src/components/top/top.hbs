@@ -1,0 +1,41 @@
+<div class="container top">
+    <div class="top__menu">
+        {{> top-logo }}
+        {{> menu }}
+    </div>
+    <div class="top__main">
+        <div class="top__mainHeader">
+            <div class="top__mainContacts">
+                {{> top-contacts }}
+            </div>
+            <div class="top__mainActions">
+                <div class="left-menu">
+                    <button class="left-menu__header" data-target=".menu">
+                        <div class="left-menu__toggle">
+                            <span></span>
+                        </div>
+                        <div class="left-menu__title">Меню</div>
+                    </button>
+                    {{> menu }}
+                </div>
+                <ul class="main-header__actions">
+                    <li class="main-header__actions-item item-first">
+                        <div class="sprite sprite__ico_compare"></div>
+                        <span class="main-header__item-title">Сравнение</span>
+                    </li>
+                    <li class="main-header__actions-item item-second">
+                        <div class="sprite sprite__ico_favorite"></div>
+                        <span class="main-header__item-title">Избранное</span>
+                    </li>
+                    <li class="main-header__actions-item item-third">
+                        <div class="sprite sprite__ico_basket_quantity"></div>
+                        <div class="sprite sprite__ico_basket"></div>
+                        <span class="main-header__item-title">Корзина</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {{> search }}
+        {{> filter }}
+    </div>
+</div>
